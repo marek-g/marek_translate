@@ -16,6 +16,14 @@ pub struct TranslateLocally {
 
 impl TranslateLocally {
     pub fn new() -> Result<Self, Box<dyn Error + Send + Sync>> {
+        #[cfg(target_os = "windows")]
+        let mut command = Command::new("./translateLocally.exe")
+            .arg("-p")
+            .stdin(Stdio::piped())
+            .stdout(Stdio::piped())
+            .spawn()?;
+
+        #[cfg(not(target_os = "windows"))]
         let mut command = Command::new("./translateLocally")
             .arg("-p")
             .stdin(Stdio::piped())
