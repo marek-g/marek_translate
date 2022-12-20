@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "marek_translate_api",
+    "marek_translate_locally",
+    "marek_translate_test",
+]

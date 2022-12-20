@@ -1,0 +1,22 @@
+[package]
+name = "marek_translate_locally"
+version = "1.0.0"
+authors = ["Marek Gibek <marek-dev@yandex.com>"]
+description = "Bindings for translateLocally"
+keywords = ["text", "translation", "locally", "bergamot", "marian"]
+categories = ["accessibility", "text-processing", "api-bindings"]
+repository = "https://github.com/marek-g/marek_translate"
+documentation = "https://docs.rs/marek_translate_locally"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+marek_translate_api = { version = "1.0", path = "../marek_translate_api" }
+async-trait = "0.1"
+async-process = "1.6"
+futures-lite = "1.12"
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"

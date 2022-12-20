@@ -1,0 +1,16 @@
+[package]
+name = "marek_translate_api"
+version = "1.0.0"
+authors = ["Marek Gibek <marek-dev@yandex.com>"]
+description = "Natural language translation API"
+keywords = ["text", "translation", "api"]
+categories = ["accessibility", "text-processing"]
+repository = "https://github.com/marek-g/marek_translate"
+documentation = "https://docs.rs/marek_translate_api"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-trait = "0.1"

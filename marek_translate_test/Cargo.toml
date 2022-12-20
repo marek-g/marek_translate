@@ -1,0 +1,18 @@
+[package]
+name = "marek_translate_test"
+version = "1.0.0"
+authors = ["Marek Gibek <marek-dev@yandex.com>"]
+description = "Natural language translation sample application"
+keywords = ["text", "translation", "locally", "bergamot", "marian"]
+categories = ["accessibility", "text-processing"]
+repository = "https://github.com/marek-g/marek_translate"
+documentation = "https://docs.rs/marek_translate_test"
+edition = "2021"
+license = "AGPL-3.0-or-later"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+marek_translate_api = { version = "1.0", path = "../marek_translate_api" }
+marek_translate_locally = { version = "1.0", path = "../marek_translate_locally" }
+tokio = { version = "1", features = ["full"] }
