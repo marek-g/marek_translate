@@ -246,7 +246,7 @@ dependencies = [
 
 [[package]]
 name = "marek_translate_locally"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "async-process",
  "async-trait",

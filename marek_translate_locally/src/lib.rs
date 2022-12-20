@@ -14,6 +14,8 @@ pub struct TranslateLocally {
     stdout: ChildStdout,
 }
 
+unsafe impl Send for TranslateLocally {}
+
 impl TranslateLocally {
     pub fn new() -> Result<Self, Box<dyn Error + Send + Sync>> {
         #[cfg(target_os = "windows")]
